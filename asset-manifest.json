@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/clothing-e-commerce-app/static/css/main.ea967e03.css",
-    "main.js": "/clothing-e-commerce-app/static/js/main.538ebd4f.js",
+    "main.js": "/clothing-e-commerce-app/static/js/main.22d6fd04.js",
     "static/js/787.1642d97a.chunk.js": "/clothing-e-commerce-app/static/js/787.1642d97a.chunk.js",
     "index.html": "/clothing-e-commerce-app/index.html",
     "main.ea967e03.css.map": "/clothing-e-commerce-app/static/css/main.ea967e03.css.map",
-    "main.538ebd4f.js.map": "/clothing-e-commerce-app/static/js/main.538ebd4f.js.map",
+    "main.22d6fd04.js.map": "/clothing-e-commerce-app/static/js/main.22d6fd04.js.map",
     "787.1642d97a.chunk.js.map": "/clothing-e-commerce-app/static/js/787.1642d97a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ea967e03.css",
-    "static/js/main.538ebd4f.js"
+    "static/js/main.22d6fd04.js"
   ]
 }
