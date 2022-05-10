@@ -1,5 +1,6 @@
 import { Search, ShoppingCartOutlined } from "@mui/icons-material";
 import { Badge } from "@mui/material";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const Container = styled.div`
@@ -81,12 +82,18 @@ export const Navbar = () => {
         <Logo>LAMA.</Logo>
       </Center>
       <Right>
-        <MenuItem>REGISTER</MenuItem>
-        <MenuItem>SIGN IN</MenuItem>
         <MenuItem>
-          <Badge badgeContent={4} color="primary">
-            <ShoppingCartOutlined />
-          </Badge>
+          <Link to="register" className="a-no-style">REGISTER</Link>
+        </MenuItem>
+        <MenuItem>
+          <Link to="login" className="a-no-style">SIGN IN</Link>
+        </MenuItem>
+        <MenuItem>
+          <Link to="cart">
+            <Badge badgeContent={4} color="primary">
+              <ShoppingCartOutlined />
+            </Badge>
+          </Link>
         </MenuItem>
       </Right>
     </Container>

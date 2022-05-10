@@ -1,4 +1,5 @@
-import styled from "styled-components"
+import { useNavigate } from "react-router-dom";
+import styled from "styled-components";
 import { Category } from "../data";
 
 const Container = styled.div`
@@ -36,18 +37,20 @@ const Button = styled.button`
   cursor: pointer;
 
   &:hover {
-  color: gray;
+    color: gray;
   }
 `;
 
-export const CategoryItem = ({ item } : { item: Category }) => {
+export const CategoryItem = ({ item }: { item: Category }) => {
+  const navigate = useNavigate();
+
   return (
     <Container>
       <Image src={item.img} />
       <Info>
         <Title>{item.title}</Title>
-        <Button>SHOP NOW</Button>
+        <Button onClick={() => navigate("/products")}>SHOP NOW</Button>
       </Info>
     </Container>
-  )
-}
+  );
+};

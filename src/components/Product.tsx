@@ -1,5 +1,10 @@
-import { FavoriteBorderOutlined, SearchOutlined, ShoppingCartOutlined } from "@mui/icons-material";
-import styled from "styled-components"
+import {
+  FavoriteBorderOutlined,
+  SearchOutlined,
+  ShoppingCartOutlined,
+} from "@mui/icons-material";
+import { useNavigate } from "react-router-dom";
+import styled from "styled-components";
 import { PopularProduct } from "../data";
 
 const Info = styled.div`
@@ -64,13 +69,15 @@ const Icon = styled.div`
   }
 `;
 
-export const Product = ({ item } : { item: PopularProduct}) => {
+export const Product = ({ item }: { item: PopularProduct }) => {
+  const navigate = useNavigate();
+
   return (
     <Container>
       <Circle />
       <Image src={item.img} />
       <Info>
-        <Icon>
+        <Icon onClick={() => navigate("/cart")}>
           <ShoppingCartOutlined />
         </Icon>
         <Icon>
@@ -81,5 +88,5 @@ export const Product = ({ item } : { item: PopularProduct}) => {
         </Icon>
       </Info>
     </Container>
-  )
-}
+  );
+};
